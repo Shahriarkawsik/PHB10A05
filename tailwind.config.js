@@ -11,6 +11,7 @@ module.exports = {
         'btnColor' : "rgb(180, 244, 97)",
         'btnTextColor' : "rgb(17,17, 17)",
         'btnTextColor-2' : "rgba(17,17, 17,0.7)",
+        'btnTextColor-3' : "rgba(17,17, 17,0.05)",
       },
       fontFamily:{
         'lexendFont' : "Lexend",

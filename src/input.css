@@ -4,6 +4,15 @@
 
 @layer components {
   .button {
-    @apply text-20  leading-6;
+    @apply text-20 leading-6;
+  }
+  .donationCardTitle {
+    @apply font-bold text-20 leading-8 text-btnTextColor;
+  }
+  .donationCardSubtitle {
+    @apply font-light leading-7 text-btnTextColor-2 text-justify;
+  }
+  .donateNowbtn {
+    @apply bg-btnColor w-full py-4 rounded-lg text-20 font-semibold leading-6;
   }
 }
