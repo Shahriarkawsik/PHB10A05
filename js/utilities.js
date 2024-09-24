@@ -1,28 +1,15 @@
-// // console.log("utilities");
-// function getValueFromInputField(id){
-//   const donationAmount =  parseFloat(document.getElementById(id).value).toFixed(2);
-//   return donationAmount;
-// }
-// function getValueFromButton(id){
-//   const donationTotalAmount =  parseFloat(document.getElementById(id).textContent).toFixed(2);
-//   return donationTotalAmount;
-// }
-
-// function calculateTotalDonationAmount(getValueFromInputField,getValueFromButton){
-//   let totalRemainingAmount = getValueFromInputField() + getValueFromButton();
-//   return totalRemainingAmount;
-// }
 
 function getValueFromInputField(id){
-  const value = document.getElementById(id).value;
-  if(isNaN(value) || value < 0 || value === ""){
-    alert ("Sir, Please write an actual amount.");
+  const inputValue = document.getElementById(id).value;
+  
+  if(isNaN(inputValue) || inputValue < 0 || inputValue === ""){
+    alert("Sir, Please write an actual amount.");
     return 0;
   }
   else{
-    const donationAmount =  parseFloat(value);
+    const donationAmount =  parseFloat(inputValue);
     return donationAmount;
-  }
+  }  
 }
 function getValueFromButton(id){
   const donationTotalAmount =  parseFloat(document.getElementById(id).textContent);
@@ -32,6 +19,7 @@ function getValueFromButton(id){
 function calculateTotalDonationAmount(inputId,buttonId){
   let totalRemainingAmount = getValueFromInputField(inputId) + getValueFromButton(buttonId);
   return totalRemainingAmount.toFixed(2);
+  
 }
 
 

@@ -10,6 +10,7 @@ document.getElementById("historyBtn").addEventListener('click',function(){
   // Have to hide Donation related element.
   document.getElementById("donationElement").classList.add('hidden');
   document.getElementById("historySection").classList.remove('hidden');
+  document.getElementById("footerSec").classList.add('fixed','bottom-0', 'w-full');
 
 })
 
@@ -23,4 +24,6 @@ document.getElementById("donationBtn").addEventListener('click',function(){
 
   // Have to show Donation related element.
   document.getElementById("donationElement").classList.remove('hidden');
+  document.getElementById("historySection").classList.add('hidden');
+  document.getElementById("footerSec").classList.remove('fixed','bottom-0', 'w-full');
 })

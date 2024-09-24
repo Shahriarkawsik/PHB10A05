@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font  -->
+  </head>
+  <body class="font-lexendFont">
+    <header class="backdrop-blur-md fixed top-0 w-full z-10">
+      <nav class="bg-bgColor pt-6 pb-16">
+        <ul class="w-4/5 mx-auto flex justify-between items-center">
+          <button class="activeBtn smallBtnPadding">
+            <a href="./index.html">Home</a>
+          </button>
+          <div class="flex items-center gap-4 max-lg:hidden">
+            <img class="" src="./assets/logo.png" alt="" />
+            <p class="font-semibold text-20 leading-6 text-textColor">
+              Donate Bangladesh
+            </p>
+          </div>
+          <div class="flex items-center gap-4">
+            <img class="" src="./assets/coin.png" alt="" />
+            <p class="font-medium text-20 leading-6 text-textColor2">
+              <span id="totalAvailableBalance">5000</span> BDT
+            </p>
+          </div>
+        </ul>
+      </nav>
+      <!-- button -->
+      <div class="flex justify-center gap-4 mt-20 mb-8 hidden">
+        <button id="donationBtn" class="activeBtn largeBtnPadding">
+          Donation
+        </button>
+        <button id="historyBtn" class="inactiveBtn largeBtnPadding">
+          History
+        </button>
+      </div>
+    </header>
+    <main class="w-4/5 mx-auto mt-80 mb-20">
+      <div class="space-y-5">
+        <h1 class="font-bold text-3xl leading-8 text-textColor text-center">
+          Important FAQ ?
+        </h1>
+        <div class="collapse">
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow border-base-300 bg-base-200 border"
+          >
+            <div class="collapse-title text-xl font-medium">
+              What is the Document Object Model (DOM)?
+            </div>
+            <div class="collapse-content">
+              <p>
+                The Document Object Model (DOM) is a cross-platform and
+                language-independent interface that treats an HTML or XML
+                document as a tree structure wherein each node is an object
+                representing a part of the document. The DOM represents a
+                document with a logical tree. Each branch of the tree ends in a
+                node, and each node contains objects. DOM methods allow
+                programmatic access to the tree; with them one can change the
+                structure, style or content of a document. Nodes can have event
+                handlers (also known as event listeners) attached to them. Once
+                an event is triggered, the event handlers get executed.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="collapse">
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow border-base-300 bg-base-200 border"
+          >
+            <div class="collapse-title text-xl font-medium">
+              How do you select an element from the DOM?
+            </div>
+            <div class="collapse-content">
+              <pre>
+                1. getElementById: 
+                const element = document.getElementById('myId'); 
+                2. getElementsByClassName (returns a live HTMLCollection):
+                const elements = document.getElementsByClassName('myClass');
+                3. getElementsByTagName (also returns a live HTMLCollection):
+                const elements = document.getElementsByTagName('div');
+                4. querySelector (returns the first matching element): 
+                const element = document.querySelector('.myClass'); // For class 
+                const element = document.querySelector('#myId'); // For ID 
+                const element = document.querySelector('div'); // For tag
+              </pre>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="collapse">
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow border-base-300 bg-base-200 border"
+          >
+            <div class="collapse-title text-xl font-medium">
+              What is event delegation in the context of the DOM, and why is it
+              usefull?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Event delegation is a technique where a single event listener on
+                a parent element manages events for child elements. It's useful
+                for improving performance, simplifying code, and automatically
+                handling dynamically added elements, making event management
+                more efficient.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="collapse">
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow border-base-300 bg-base-200 border"
+          >
+            <div class="collapse-title text-xl font-medium">
+              How do you manipulate an element's attributes and styles using the
+              DOM?
+            </div>
+            <div class="collapse-content">
+              <p class="text-justify">
+                You can manipulate an element's attributes using setAttribute,
+                getAttribute, and removeAttribute methods. To change styles,
+                access the style property of the element. For example,
+                element.style.color = 'red'; updates the color, while
+                element.setAttribute('src', 'image.jpg'); changes an attribute
+                like the source of an image.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-bgColor h-20 fixed bottom-0 w-full"></footer>
+  </body>
+</html>
