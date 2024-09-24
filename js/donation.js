@@ -4,7 +4,7 @@ let totalRemainingAmount = getValueFromButton("totalAvailableBalance");
 
 // Noakhali Donation
 document.getElementById("forDonationBtn").addEventListener('click',function(){
-
+  const donationCardTitle = document.getElementById("donationCardTitle").innerText;
   const inputAmount = getValueFromInputField("forDonationInput");   
   if(totalRemainingAmount < inputAmount){
     alert("You have not enough money for donating")
@@ -15,12 +15,13 @@ document.getElementById("forDonationBtn").addEventListener('click',function(){
   }
   totalRemainingAmount -= inputAmount; 
   document.getElementById("totalAvailableBalance").textContent = totalRemainingAmount; 
-
+  const donationDate = new Date();
+  createNewDiv(inputAmount,donationCardTitle,donationDate);
 })
 
 // Donate for relief
 document.getElementById("forReliefBtn").addEventListener('click',function(){
-
+  const donationCardTitle = document.getElementById("ReliefCardTitle").innerText;
   const inputAmount = getValueFromInputField("forReliefInput");   
   if(totalRemainingAmount < inputAmount){
     alert("You have not enough money for donating")
@@ -32,11 +33,13 @@ document.getElementById("forReliefBtn").addEventListener('click',function(){
   totalRemainingAmount -= inputAmount; 
   document.getElementById("totalAvailableBalance").textContent = totalRemainingAmount; 
 
+  const donationDate = new Date();
+  createNewDiv(inputAmount,donationCardTitle,donationDate);
 })
 
 // For Quota Movement
 document.getElementById("forQuotaMoveBtn").addEventListener('click',function(){
-
+  const donationCardTitle = document.getElementById("quotaMoveCardTitle").innerText;
   const inputAmount = getValueFromInputField("forQuotaMoveInput");   
   if(totalRemainingAmount < inputAmount){
     alert("You have not enough money for donating")
@@ -48,6 +51,8 @@ document.getElementById("forQuotaMoveBtn").addEventListener('click',function(){
   }
   totalRemainingAmount -= inputAmount; 
   document.getElementById("totalAvailableBalance").textContent = totalRemainingAmount; 
+  const donationDate = new Date();
+  createNewDiv(inputAmount,donationCardTitle,donationDate);
 
 })
 

@@ -34,7 +34,15 @@ function calculateTotalDonationAmount(inputId,buttonId){
   return totalRemainingAmount.toFixed(2);
 }
 
-// getValueFromInputField(10);
-// getValueFromButton(10);
-// const TotalDonationAmount = calculateTotalDonationAmount(10,10);
-// console.log(TotalDonationAmount);
+
+function createNewDiv(inputAmount,donationCardTitle,donationDate){
+  const historyContainer = document.getElementById("historyContainer");
+  const historyCard = document.createElement("div");
+  historyCard.classList.add("historyCard");
+  historyCard.innerHTML =
+  `
+    <h1 class="historyCardTitle"> ${inputAmount} Taka is Donated for ${donationCardTitle}</h1>
+    <p class="historyCardSubtitle ">Date : ${donationDate}</p>
+  `;  
+  historyContainer.appendChild(historyCard);
+}

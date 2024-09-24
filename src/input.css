@@ -31,4 +31,14 @@
   .donationCardSubtitle {
     @apply font-light leading-7 text-textColor2 text-justify;
   }
+  /* History card element  */
+  .historyCard {
+    @apply p-8 border border-solid border-borderColor2 rounded-2xl space-y-4;
+  }
+  .historyCardTitle {
+    @apply text-20 font-bold leading-8 text-textColor;
+  }
+  .historyCardSubtitle {
+    @apply text-textColor2 font-light leading-7;
+  }
 }

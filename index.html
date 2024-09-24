@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donate Bangladesh</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./src/output.css" />
     <!-- font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,15 +36,19 @@
       </nav>
       <!-- button -->
       <div class="flex justify-center gap-4 mt-20 mb-8">
-        <button class="activeBtn largeBtnPadding">Donation</button>
-        <button class="inactiveBtn largeBtnPadding">History</button>
+        <button id="donationBtn" class="activeBtn largeBtnPadding">
+          Donation
+        </button>
+        <button id="historyBtn" class="inactiveBtn largeBtnPadding">
+          History
+        </button>
       </div>
     </header>
-    <main class="w-4/5 mx-auto lg:mt-80">
-      <div class="cardContainer">
+    <main class="w-4/5 mx-auto mt-80">
+      <div id="donationElement" class="cardContainer space-y-3 ">
         <!-- div>img+div>button+h2+p+input:text+button.activeBtn.largeBtnPadding -->
         <!-- card 1 -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 card ">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 card">
           <!-- card 1 img-->
           <img
             class="max-lg:w-full"
@@ -56,7 +61,7 @@
               <img class="" src="./assets/coin.png" alt="" />
               <p><span id="forDonationAvailableBalance">0</span> BDT</p>
             </button>
-            <h2 class="donationCardTitle">
+            <h2 id="donationCardTitle" class="donationCardTitle">
               Donate for Flood at Noakhali, Bangladesh
             </h2>
             <p class="donationCardSubtitle">
@@ -84,7 +89,7 @@
           </div>
         </div>
         <!-- card 2 -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 card ">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 card">
           <!-- card 2 img-->
           <img
             class="max-lg:w-full"
@@ -97,7 +102,7 @@
               <img class="" src="./assets/coin.png" alt="" />
               <p><span id="forReliefAvailableBalance">0</span> BDT</p>
             </button>
-            <h2 class="donationCardTitle">
+            <h2 id="ReliefCardTitle" class="donationCardTitle">
               Donate for Flood Relief in Feni,Bangladesh
             </h2>
             <p class="donationCardSubtitle">
@@ -137,7 +142,7 @@
               <img class="" src="./assets/coin.png" alt="" />
               <p><span id="forQuotaMoveAvailableBalance">0</span> BDT</p>
             </button>
-            <h2 class="donationCardTitle">
+            <h2 id="quotaMoveCardTitle" class="donationCardTitle">
               Aid for Injured in the Quota Movement
             </h2>
             <p class="donationCardSubtitle">
@@ -164,6 +169,25 @@
           </div>
         </div>
       </div>
+      <!-- for History section -->
+      <!-- by default hide থাকবে  -->
+      <section id="historySection" class="hidden">
+        <div id="historyContainer" class="space-y-4">
+          <!-- history 1 -->
+          <!-- <div
+            id="history"
+            class="historyCard "
+          >
+            <h1 class="historyCardTitle">
+              96500 Taka is Donated for famine-2024 at Feni, Bangladesh
+            </h1>
+            <p class="historyCardSubtitle ">
+              Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard
+              Time)
+            </p>
+          </div> -->
+        </div>
+      </section>
     </main>
     <footer></footer>
 
