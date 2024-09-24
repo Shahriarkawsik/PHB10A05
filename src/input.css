@@ -3,16 +3,32 @@
 @tailwind utilities;
 
 @layer components {
-  .button {
-    @apply text-20 leading-6;
+  /* use dynamic padding */
+  .activeBtn {
+    @apply bg-btnColor text-textColor text-20 rounded-lg border-none leading-6 font-semibold;
+  }
+  .inactiveBtn {
+    @apply text-textColor2 rounded-lg border border-borderColor border-solid font-medium leading-6;
+  }
+  .card {
+    @apply rounded-2xl border border-solid border-borderColor2 p-6 lg:p-8;
+  }
+  .cardBtn {
+    @apply bg-btnColor2 text-textColor2 rounded-lg px-4 py-3 leading-5 font-normal;
+  }
+  .inputField {
+    @apply border border-solid border-borderColor2 rounded-lg  p-5 placeholder-textColor3 w-full;
+  }
+  .smallBtnPadding {
+    @apply px-8 py-3;
+  }
+  .largeBtnPadding {
+    @apply px-8 py-4;
   }
   .donationCardTitle {
-    @apply font-bold text-20 leading-8 text-btnTextColor;
+    @apply font-bold text-20 leading-8 text-textColor;
   }
   .donationCardSubtitle {
-    @apply font-light leading-7 text-btnTextColor-2 text-justify;
-  }
-  .donateNowbtn {
-    @apply bg-btnColor w-full py-4 rounded-lg text-20 font-semibold leading-6;
+    @apply font-light leading-7 text-textColor2 text-justify;
   }
 }
