@@ -11,6 +11,7 @@ module.exports = {
         'borderColor': 'rgba(17, 17, 17, 0.3)',        
         'borderColor2': 'rgba(17, 17, 17, 0.1)',
         'btnColor' : 'rgb(180, 244, 97)',
+        'btnHover' : 'rgba(180, 244, 97,0.7)',
         'btnColor2' : 'rgba(17, 17, 17, 0.05)',
         'textColor': 'rgb(17, 17, 17)',
         'textColor2': 'rgba(17, 17, 17, 0.7)',

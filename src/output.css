@@ -1313,6 +1313,10 @@ html {
   color: rgb(17 17 17 / var(--tw-text-opacity));
 }
 
+.activeBtn:hover {
+  background-color: rgba(180, 244, 97,0.7);
+}
+
 .inactiveBtn {
   border-radius: 0.5rem;
   border-width: 1px;
@@ -1426,6 +1430,10 @@ html {
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .w-4\/5 {

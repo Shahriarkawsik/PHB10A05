@@ -43,7 +43,7 @@
       <div class="cardContainer">
         <!-- div>img+div>button+h2+p+input:text+button.activeBtn.largeBtnPadding -->
         <!-- card 1 -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 card">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 card ">
           <!-- card 1 img-->
           <img
             class="max-lg:w-full"
@@ -84,18 +84,18 @@
           </div>
         </div>
         <!-- card 2 -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 card">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 card ">
           <!-- card 2 img-->
           <img
             class="max-lg:w-full"
             src="./assets/feni.png"
             alt="rescue flood affected people"
           />
-          <!-- card 1 info -->
+          <!-- card 2 info -->
           <div class="space-y-5">
             <button class="flex items-center gap-4 cardBtn">
               <img class="" src="./assets/coin.png" alt="" />
-              <p><span>0</span> BDT</p>
+              <p><span id="forReliefAvailableBalance">0</span> BDT</p>
             </button>
             <h2 class="donationCardTitle">
               Donate for Flood Relief in Feni,Bangladesh
@@ -109,30 +109,33 @@
               lives of those in need.
             </p>
             <input
+              id="forReliefInput"
               class="inputField"
               type="text"
               name=""
-              id=""
               placeholder="Write Donation Amount"
             />
-            <button class="activeBtn largeBtnPadding max-lg:w-full">
+            <button
+              id="forReliefBtn"
+              class="activeBtn largeBtnPadding max-lg:w-full"
+            >
               Donate Now
             </button>
           </div>
         </div>
         <!-- card 3 -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 card">
-          <!-- card 2 img-->
+          <!-- card 3 img-->
           <img
             class="max-lg:w-full"
             src="./assets/quota-protest.png"
             alt="rescue flood affected people"
           />
-          <!-- card 1 info -->
+          <!-- card 3 info -->
           <div class="space-y-5">
             <button class="flex items-center gap-4 cardBtn">
               <img class="" src="./assets/coin.png" alt="" />
-              <p><span>0</span> BDT</p>
+              <p><span id="forQuotaMoveAvailableBalance">0</span> BDT</p>
             </button>
             <h2 class="donationCardTitle">
               Aid for Injured in the Quota Movement
@@ -146,13 +149,16 @@
               lives of those in need.
             </p>
             <input
+              id="forQuotaMoveInput"
               class="inputField"
               type="text"
               name=""
-              id=""
               placeholder="Write Donation Amount"
             />
-            <button class="activeBtn largeBtnPadding max-lg:w-full">
+            <button
+              id="forQuotaMoveBtn"
+              class="activeBtn largeBtnPadding max-lg:w-full"
+            >
               Donate Now
             </button>
           </div>
@@ -164,5 +170,6 @@
     <!-- scripts -->
     <script src="./js/utilities.js"></script>
     <script src="./js/donation.js"></script>
+    <script src="./js/history.js"></script>
   </body>
 </html>
