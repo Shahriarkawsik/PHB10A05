@@ -1,8 +1,9 @@
 // for Noakhali donation
-document.getElementById("forDonationBtn").addEventListener('click',function(event){
-  event.preventDefault();
+document.getElementById("forDonationBtn").addEventListener('click',function(){
+  
   const inputAmount = getValueFromInputField("forDonationInput");
   let donationCardTitle = getValueFromText("donationCardTitle");
+  // window.alert(typeof inputAmount)
 
    if(checkDonation(inputAmount)){
     increaseDonationSectorAmount(inputAmount,"forDonationAvailableBalance");
@@ -18,8 +19,8 @@ document.getElementById("forDonationBtn").addEventListener('click',function(even
 
 // for Relief 
 
-document.getElementById("forReliefBtn").addEventListener('click',function(event){
-  event.preventDefault();
+document.getElementById("forReliefBtn").addEventListener('click',function(){
+  
   const inputAmount = getValueFromInputField("forReliefInput");
   let donationCardTitle = getValueFromText("ReliefCardTitle");
 
@@ -37,8 +38,8 @@ document.getElementById("forReliefBtn").addEventListener('click',function(event)
 
 // for Quota Movement 
 
-document.getElementById("forQuotaMoveBtn").addEventListener('click',function(event){
-  event.preventDefault();
+document.getElementById("forQuotaMoveBtn").addEventListener('click',function(){
+  
   const inputAmount = getValueFromInputField("forQuotaMoveInput");
   let donationCardTitle = getValueFromText("quotaMoveCardTitle");
 

@@ -13,9 +13,10 @@ function getValueFromText(textId){
 let totalRemainingAmount = getValueFromButton("totalAvailableBalance");
 // console.log(totalRemainingAmount);
 function checkDonation(inputAmount){
+  let totalRemainingAmount = getValueFromButton("totalAvailableBalance");
   const donateAmount = inputAmount;
-    if(typeof donateAmount === 'number' && donateAmount > 0 && totalRemainingAmount >= donateAmount){
-    return true
+    if(typeof donateAmount === 'number' && donateAmount > 0 && totalRemainingAmount >= donateAmount && totalRemainingAmount >= 0){
+    return true;
   }
   else{
     return false;
@@ -30,6 +31,7 @@ function decreaseYourCurrentBalance(inputAmount){
   let totalRemainingAmount = getValueFromButton("totalAvailableBalance");
   totalAmount = totalRemainingAmount - inputAmount;
   document.getElementById("totalAvailableBalance").textContent = totalAmount;
+  
 }
 
 function showDonationModal(id){
