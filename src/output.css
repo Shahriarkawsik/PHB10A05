@@ -758,6 +758,36 @@ html {
   --bc: 74.6477% 0.0216 264.435964;
 }
 
+.alert {
+  display: grid;
+  width: 100%;
+  grid-auto-flow: row;
+  align-content: flex-start;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+  text-align: center;
+  border-radius: var(--rounded-box, 1rem);
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-border-opacity)));
+  padding: 1rem;
+  --tw-text-opacity: 1;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
+  --alert-bg: var(--fallback-b2,oklch(var(--b2)/1));
+  --alert-bg-mix: var(--fallback-b1,oklch(var(--b1)/1));
+  background-color: var(--alert-bg);
+}
+
+@media (min-width: 640px) {
+  .alert {
+    grid-auto-flow: column;
+    grid-template-columns: auto minmax(auto,1fr);
+    justify-items: start;
+    text-align: start;
+  }
+}
+
 .avatar.placeholder > div {
   display: flex;
   align-items: center;
@@ -1974,6 +2004,16 @@ details.collapse summary::-webkit-details-marker {
 
 /* History card element  */
 
+/* .historyCard {
+    @apply p-8 border border-solid border-borderColor2 rounded-2xl space-y-4;
+  }
+  .historyCardTitle {
+    @apply text-20 font-bold leading-8 text-textColor;
+  }
+  .historyCardSubtitle {
+    @apply text-textColor2 font-light leading-7;
+  } */
+
 .collapse {
   visibility: collapse;
 }
@@ -1992,6 +2032,10 @@ details.collapse summary::-webkit-details-marker {
 
 .z-10 {
   z-index: 10;
+}
+
+.m-7 {
+  margin: 1.75rem;
 }
 
 .mx-auto {
@@ -2110,9 +2154,17 @@ details.collapse summary::-webkit-details-marker {
   border-width: 1px;
 }
 
+.border-solid {
+  border-style: solid;
+}
+
 .border-base-300 {
   --tw-border-opacity: 1;
   border-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-border-opacity)));
+}
+
+.border-borderColor2 {
+  border-color: rgba(17, 17, 17, 0.1);
 }
 
 .bg-base-200 {
@@ -2201,6 +2253,10 @@ details.collapse summary::-webkit-details-marker {
   font-weight: 700;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -2211,6 +2267,10 @@ details.collapse summary::-webkit-details-marker {
 
 .leading-6 {
   line-height: 1.5rem;
+}
+
+.leading-7 {
+  line-height: 1.75rem;
 }
 
 .leading-8 {

@@ -40,11 +40,11 @@ function createNewDiv(inputAmount,donationCardTitle){
   const donationDate = new Date();
   const historyContainer = document.getElementById("historyContainer");
   const historyCard = document.createElement("div");
-  historyCard.classList.add('p-8', 'border', 'border-solid', 'border-borderColor2', 'rounded-2xl', 'space-y-4');
+  historyCard.classList.add('border', 'border-solid', 'border-borderColor2', 'rounded-2xl', 'space-y-4','p-8');
   // historyCard.innerHTML = "";
   historyCard.innerHTML =
   `
-    <h1 class="text-20 font-bold leading-8 text-textColor"> ${inputAmount} Taka is Donated for ${donationCardTitle} </h1>
+    <h1 class="text-20 font-bold leading-8 text-textColor "> ${inputAmount} Taka is Donated for ${donationCardTitle} </h1>
     <p class="text-textColor2 font-light leading-7 ">Date : ${donationDate}</p>
   `;  
   historyContainer.appendChild(historyCard);
